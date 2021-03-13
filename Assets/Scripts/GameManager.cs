@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
 		StartCoroutine(SpawnTarget());
 		scoreTextDef = scoreText.text;
 		UpdateScore(0);
+	}
+
+	public void GameOver()
+	{
 		gameOverText.gameObject.SetActive(true);
 	}
 
